@@ -1,0 +1,178 @@
+body {
+    font-family: arial;
+    background-color: #0f0f0f;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main_navbar {
+    width: 100%;
+    height: 5vh;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0.719);
+    box-shadow: 0px 0px 15px 0px black;
+    position: fixed;
+    z-index: 1000;
+}
+
+.main_navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_navbar li {
+    text-align: center;
+    margin-right: 1.5%;
+}
+
+.main_navbar li:last-child {
+    margin-right: 0;
+}
+
+.main_navbar li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.527);
+    font-size: 1.5em;
+    transition: 0.4s;
+}
+
+.main_navbar a {
+    position: relative;
+    padding: 0px 15px;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 1s, border-bottom-width 1s, border-radius 1s;
+}
+
+.main_navbar a:hover {
+    color: white;
+    background-color: #ffffff11;
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-width: 2px;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container h1 {
+    text-align: center;
+    margin: 15% auto;
+    letter-spacing: 0.1vw;
+    width: 16vw;
+    color: #ffffffd3;
+    font-weight: bold;
+    
+}
+
+.form-rastreamento {
+    text-align: center;
+}
+
+.text-input {
+    width: 26%;
+    height: 4vh;
+    font-size: 12pt;
+    background-color: rgba(0, 0, 0, 0.438);
+    border: 2px solid rgb(20, 20, 20);
+    color: rgb(199, 199, 199);
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    outline: none;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.text-input:focus {
+    width: 30%;
+    height: 45px;
+    font-size: 14pt;
+    border-color: white;
+}
+
+.submit-button {
+    color: rgb(199, 199, 199);
+    width: 6vw;
+    height: 4vh;
+    font-size: 11pt;
+    letter-spacing: 1.5px;
+    border: 2px solid rgb(27, 27, 27);
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.submit-button:hover {
+    width: 7vw;
+    height: 4.5vh;
+    font-size: 13pt;
+    border-color: white;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+}
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90vw; /* Aumenta a largura da container para melhor uso do espaço */
+        padding: 15px; /* Ajusta o padding */
+    }
+
+    .main_navbar li {
+        margin-right: 1%; /* Reduz a margem dos itens de navegação */
+    }
+
+    .text-input {
+        width: 80%; /* Aumenta a largura do campo de entrada */
+        height: 35px;
+        font-size: 10pt;
+        margin-top: 100px;
+    }
+
+    .text-input:focus {
+        width: 80%;
+    }
+
+    .submit-button {
+        width: 80%;
+        height: 35px;
+        font-size: 10pt;
+    }
+
+    .submit-button:hover {
+        width: 80%;
+    }
+
+    .logo {
+        width: 20%; /* Ajusta o tamanho do logo */
+    }
+
+    .main_navbar li {
+        margin: 0 1%; /* Ajusta a margem dos itens de navegação */
+    }
+
+    .container h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título */
+        width: 90%; /* Ajusta a largura do título */
+    }
+}

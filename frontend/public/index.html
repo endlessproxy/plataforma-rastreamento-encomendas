@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="../images/logo.png">
+    <title>NuLL Society</title>
+</head>
+<body>
+    <!--MAIN NAVBAR-->
+    <nav class="main_navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="https://github.com/endlessproxy" target="_blank">Projects</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--MAIN CONTAINER-->
+    <main class="container">
+
+        <!--ICON-->
+        <p style="text-align: center; margin-top: 30px; height: 15%;"><img class="logo" src="../images/logo.png" alt=""></p>
+
+        <!--TITLE-->
+        <h1 style="text-align: center; width: 30vw; height: 5vh; margin-bottom: 5px;">Digite o Código da Encomenda</h1>
+
+        <form class="form-rastreamento">
+            <input class="text-input" maxlength="26" type="text">
+            <br>
+            <input class="submit-button" type="submit" value="RASTREAR">
+        </form>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Remove o foco do elemento atualmente focado, se houver
+            if (document.activeElement) {
+                document.activeElement.blur();
+            }
+        });
+    </script>
+</body>
+</html> 
